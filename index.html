@@ -34,6 +34,7 @@
                         </button>
 
                     </div>
+                    <div class="sponsorNav"><div id="titleSponsorText">Powered by </div><div id="titleSponsorLogo"></div></div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="scroll active"><a href="#home">Home</a>
@@ -52,6 +53,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="socialIcons">
+            <div id="fbSocialProfile" onclick="window.open('https://www.facebook.com/ximera14', '_blank');"></div>
         </div>
     </header>
     <!--/#header-->
@@ -76,7 +80,7 @@
                         <div class="dateInfo">6<sup>th</sup>
                             & 7<sup>th </sup>Nov</div>
                         <div class="registrationInfo">
-                            <a href="https://bluestreaklabs.typeform.com/to/KQUJof" target="_blank">Register<i class="fa fa-angle-right"></i></a>
+                            <a href="https://ximerafest.typeform.com/to/e0w61F" target="_blank">Register<i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,6 +89,7 @@
     </section>
     <!--/#home-->
     <section id="explore">
+         <img class="exploreBg" src="images/explore.png" alt="slider">
         <div class="container">
             <div class="row align-center wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                 <h1 >XIMERA</h1>
@@ -143,14 +148,18 @@
                     <div class='summaryText1'><%=summaryText1%></div>
                     <div class='summaryText2'><%=summaryText2%></div>
                     <div class='summaryText3'><%=summaryText3%></div>
-                    <div class='paricipantNo'>No Of Participants : <b><%=paricipantNo%></b></div>
-                    <div class='regFee'>Registration Fee : <b><%=regFee%></b></div>
-                    <div class='prizeMoney1'>Prize Money : <b><%=prizeMoney1%></b></div>
-                    <div class='prizeMoney2'><b><%=prizeMoney2%></b></div>
+                    <div class='paricipantNo'>No Of Participants : <%=paricipantNo%></div>
+                    <div class='regFee'>Registration Fee : <%=regFee%></div>
+                    <div class='prizeMoney1'>Prizes worth : <%=prizeMoney1%></div>
+                    <div class='prizeMoney2'><%=prizeMoney2%></div>
+                    <div class='detailsMore'>
+                      <a href="<%=importantDetails%>" class="detailsMore" target="_blank"><%=importantDetailsText%></a>
+                    </div>
                 </div>
                 <div class='infoFooter'>
-                    <div class='registrationText'><a href="https://ximerafest.typeform.com/to/e0w61F" class="register">Register</a></div>    
-                    <div class='contactInfo'>Contact <%=contactInfo%></div>
+                    <div class='contactInfo'>Contact : <%=contactInfo%></div>
+                    <div class='registrationText'><a href="https://ximerafest.typeform.com/to/e0w61F" class="register"  target="_blank">Register</a></div>    
+                   
                 </div>
             </div>
         </script>
@@ -197,7 +206,7 @@
 -->
     <section id="contact">
         <div class="contact-section">
-            <img class="contactBg" src="images/travel_bg.jpg" alt="slider">
+            <img class="contactBg" src="images/explore.png" alt="slider">
             <div class="container">
                 <div class="row">
                     <div class="align-center" data-wow-duration="1s" data-wow-delay="0.5s">

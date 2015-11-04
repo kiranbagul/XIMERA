@@ -5,6 +5,37 @@
 *******Typography******
 **************************/
 
+.sponsorNav{
+    position: fixed !important;
+    left: 0px;
+    top:0px;
+    font-family: 'Kurale', serif;
+    font-size: 20px;
+    width: 280px;
+    background-color: white;
+    box-shadow: 6px 0px 7px #8A7777;
+    border-radius: 0px 0px 10px 0px;
+}
+.fixed-menu .sponsorNav{
+    box-shadow : 0px 0px 0px black;
+}
+#titleSponsorLogo{
+    background-image: url("../images/canara.png");
+    width: 150px;
+    height: 38px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#titleSponsorText{
+    margin: 10px;
+    display: inline;
+    float: left;
+    color: #AD0000;
+}
+
 @font-face {
     font-family: bf;
     src: url(../fonts/BenjaminFranklin.ttf);
@@ -14,7 +45,6 @@
     src: url(../fonts/Requiem.ttf);
     font-weight: bold;
 }
-
 a {
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
@@ -42,11 +72,11 @@ h2 {
     margin-top: 12px
 }
 .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #000;
 }
 .navbar-toggle,
 .navbar-toggle:focus {
-    border: 1px solid #fff;
+    border: 1px solid #000;
     outline: none;
 }
 sup {
@@ -156,6 +186,21 @@ sup {
 *******Home CSS******
 **************************/
 
+#socialIcons{
+    position: fixed;
+    top:25%;
+    z-index: 1000;
+}
+#fbSocialProfile{
+    background-image: url('../images/fb.jpeg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
 .ximera-heading {
     font-size: 70px;
 }
@@ -163,13 +208,14 @@ sup {
 #explore h1,
 #explore h2 {
     text-transform: inherit;
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.6em;
     text-align: justify;
     font-family: 'Kurale', serif;
     width: 70%;
     margin-left: 15%;
-    color: #FFF;
+    color: black;
+    text-shadow: 0px 1px white;
 }
 #explore h1 {
     font-size: 1.5em;
@@ -177,7 +223,7 @@ sup {
 #explore h2 {
     font-size: 1.3em;
 }
-#explore hr{
+#explore hr {
     width: 40%;
 }
 #home {
@@ -313,11 +359,11 @@ sup {
     background-size: cover;
     background-image: url('../images/events/infoimages/paper_texture.jpg');
 }
-.eventInfoBg .header{
+.eventInfoBg .header {
     padding: 25px;
     text-align: left;
 }
-.eventInfoBg .titleSection{
+.eventInfoBg .titleSection {
     width: 70%;
     display: inline-block;
 }
@@ -334,10 +380,10 @@ sup {
     display: inline;
     margin-top: -70px;
 }
-.eventInfoBg .summary{
+.eventInfoBg .summary {
     margin-top: -30px;
 }
-.eventInfoBg .civilizationTitle{
+.eventInfoBg .civilizationTitle {
     text-align: center;
     font-family: bf;
     color: firebrick;
@@ -346,7 +392,7 @@ sup {
 }
 .eventInfoBg .summaryText1,
 .eventInfoBg .summaryText2,
-.eventInfoBg .summaryText3{
+.eventInfoBg .summaryText3 {
     margin: 17px;
     font-family: bf;
     text-align: left;
@@ -355,36 +401,36 @@ sup {
 .eventInfoBg .paricipantNo,
 .eventInfoBg .regFee,
 .eventInfoBg .prizeMoney1,
-.eventInfoBg .prizeMoney2{
+.eventInfoBg .prizeMoney2 {
     font-family: 'Kurale', serif;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
 }
-.eventInfoBg .prizeMoney2{
+.eventInfoBg .prizeMoney2 {
     margin-left: 100px;
 }
-.eventInfoBg .infoFooter{
-    padding: 20px;
+.eventInfoBg .infoFooter {
+    font-family: 'Kurale', serif;
+    font-size: 16px;
+    padding: 0px 0px 20px 10px;
     position: absolute;
     bottom: 0px;
     width: 100%;
 }
-.eventInfoBg .registrationText{
+.eventInfoBg .registrationText {
     float: left;
     text-shadow: 2px 2px white;
     text-decoration: underline;
-    display: inline;
-    width: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
-.eventInfoBg .registrationText a{
+.eventInfoBg .registrationText a {
     color: firebrick;
 }
-.eventInfoBg .contactInfo{
-    text-align: right;
-    margin-right: 30px;
-    display: initial;
-    width: 50%;
+.eventInfoBg .contactInfo {
+    text-align: left;
 }
 .event {
     display: inline-block;
@@ -441,7 +487,6 @@ sup {
     color: #E8D2D2;
     opacity: 1;
 }
-
 .event-item img:hover {
     box-shadow: 2px 2px 2px black;
 }
@@ -454,25 +499,38 @@ sup {
 .event-subtitle {
     font-size: 20px;
 }
-#explore {
-    background-color: #FFFFFF;
-    background-image: url("../images/events/bg_explore.jpg");
-    background-position: center bottom;
-    position: relative;
-    overflow: hidden;
-    padding: 80px 0 100px;
-    text-align: center;
-    background-size: cover;
+.detailsMore {
+  padding-top: 13px;
+  font-family: 'Kurale', serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #630606;
+  text-decoration: underline;
 }
-
+#explore {
+    text-align: center;
+}
+#explore .exploreBg{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    opacity: 0.7;
+}
+#explore .container {
+    padding-top: 47px;
+    position: relative;
+}
 /*************************
 *******schedule CSS******
 **************************/
 
 #events {
+    background-image: url('../images/noisy-texture.png');
+    background-color: #F9F4DA;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: rq;
+    position: relative;
 }
 #events .arrow {
     color: black;
@@ -481,7 +539,6 @@ sup {
     width: 76%;
     margin-left: 12%;
 }
-
 .single-event {
     text-align: center;
 }
@@ -498,7 +555,6 @@ sup {
     font-weight: 100;
     display: block;
 }
-
 #sponsers .arrow {
     color: black;
 }
@@ -556,31 +612,24 @@ sup {
 .sponsor-control-right {
     right: 10%
 }
-
 #map {
     position: relative;
 }
 #gmap {
     height: 450px;
 }
-
 .contact-section {
     text-align: center;
     font-family: 'Kurale', serif;
-    color: white;
+    color: black;
+    text-shadow: 1px 1px #FFFFFF;
 }
-.contact-section .contactBg{
-position: absolute;
-    -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-        width: 100%;
+.contact-section .contactBg {
     position: absolute;
+    width: 100%;
     left: 0px;
+    max-height: 1000px;
 }
-
 #contact .container {
     padding-top: 47px;
     position: relative;
@@ -594,10 +643,7 @@ position: absolute;
 }
 #contact address {
     font-size: 21px;
-    color: white;
-    text-shadow: 1px 1px #373737;
 }
-
 /*************************
 ******Footer CSS****
 **************************/
